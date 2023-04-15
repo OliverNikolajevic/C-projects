@@ -16,26 +16,26 @@ struct Bank {
 
 void openAccount(struct Bank *bank) {
     if (bank->numCustomers >= MAX_CUSTOMERS) {
-        printf("Cannot open new account. Maximum limit reached.\n");
+        printf("\n\t\t\tCannot open new account. Maximum limit reached.\n");
         return;
     }
     struct BankAccount customer;
-    printf("Enter name: ");
+    printf("\n\t\t\tEnter name: ");
     scanf("%s", customer.name);
-    printf("Enter account number: ");
+    printf("\n\t\t\tEnter account number: ");
     scanf("%s", customer.accountNumber);
-    printf("Enter opening balance: ");
+    printf("\n\t\t\tEnter opening balance: ");
     scanf("%lf", &customer.balance);
     bank->customers[bank->numCustomers] = customer;
     bank->numCustomers++;
-    printf("Account opened successfully!\n");
+    printf("\n\t\t\tAccount opened successfully!\n");
 }
 
 void displayAccounts(struct Bank bank) {
 	int i;
-    printf("Name\tAccount Number\tBalance\n");
+    printf("\n\t\t\tName\tAccount Number\tBalance\n");
     for (i = 0; i < bank.numCustomers; i++) {
-        printf("%s\t%s\t\t%.2lf\n", bank.customers[i].name, bank.customers[i].accountNumber, bank.customers[i].balance);
+        printf("\n\t\t\t%s\t%s\t\t%.2lf\n", bank.customers[i].name, bank.customers[i].accountNumber, bank.customers[i].balance);
     }
 }
 
@@ -44,11 +44,11 @@ void deposit(struct Bank *bank, char *accountNumber, double amount) {
     for ( i = 0; i < bank->numCustomers; i++) {
         if (strcmp(bank->customers[i].accountNumber, accountNumber) == 0) {
             bank->customers[i].balance += amount;
-            printf("Deposit of %.2lf successful!\n", amount);
+            printf("\n\t\t\tDeposit of %.2lf successful!\n", amount);
             return;
         }
     }
-    printf("Account not found.\n");
+    printf("\n\t\t\tAccount not found.\n");
 }
 
 void withdraw(struct Bank *bank, char *accountNumber, double amount) {
@@ -57,14 +57,14 @@ void withdraw(struct Bank *bank, char *accountNumber, double amount) {
         if (strcmp(bank->customers[i].accountNumber, accountNumber) == 0) {
             if (bank->customers[i].balance >= amount) {
                 bank->customers[i].balance -= amount;
-                printf("Withdrawal of %.2lf successful!\n", amount);
+                printf("\n\t\t\tWithdrawal of %.2lf successful!\n", amount);
             } else {
-                printf("Insufficient balance!\n");
+                printf("\n\t\t\tInsufficient balance!\n");
             }
             return;
         }
     }
-    printf("Account not found.\n");
+    printf("\n\t\t\tAccount not found.\n");
 }
 
 void closeAccount(struct Bank *bank, char *accountNumber) {
@@ -75,11 +75,11 @@ void closeAccount(struct Bank *bank, char *accountNumber) {
                 bank->customers[j] = bank->customers[j + 1];
             }
             bank->numCustomers--;
-            printf("Account closed successfully!\n");
+            printf("\n\t\t\tAccount closed successfully!\n");
             return;
         }
     }
-    printf("Account not found.\n");
+    printf("\n\t\t\tAccount not found.\n");
 }
 
 int main() {
@@ -108,29 +108,29 @@ int main() {
                 displayAccounts(bank);
                 break;
             case 3:
-        printf("Enter account number: ");
+        printf("\n\t\t\tEnter account number: ");
                 scanf("%s", accountNumber);
-        printf("Enter amount to deposit: ");
+        printf("\n\t\t\tEnter amount to deposit: ");
                 scanf("%lf", &amount);
         deposit(&bank, accountNumber, amount);
             break;
             case 4:
-        printf("Enter account number: ");
+        printf("\n\t\t\tEnter account number: ");
                 scanf("%s", accountNumber);
-        printf("Enter amount to withdraw: ");
+        printf("\n\t\t\tEnter amount to withdraw: ");
                 scanf("%lf", &amount);
         withdraw(&bank, accountNumber, amount);
             break;
             case 5:
-        printf("Enter account number: ");
+        printf("\n\t\t\tEnter account number: ");
                 scanf("%s", accountNumber);
             closeAccount(&bank, accountNumber);
             break;
             case 6:
-        printf("Exiting program...\n");
+        printf("\n\t\t\tExiting program...\n");
             break;
             default:
-        printf("Invalid choice. Please try again.\n");
+        printf("\n\t\t\tInvalid choice. Please try again.\n");
         }
     } while (choice != 6);
 return 0;
