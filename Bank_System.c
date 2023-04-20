@@ -89,7 +89,7 @@ int main() {
     char accountNumber[20];
     double amount;
     system("color 2");
-    printf("\t\t\t\t\t\t\t\t\tThe game was developed by Oliver Nikolajevic");
+    printf("\t\t\t\t\t\t\t\t\tThe code was developed by Oliver Nikolajevic");
     printf("\n\n\t\t\tBANKING MANAGEMENT SYSTEM");
     do {
         printf("\n\n\n\t\t\t 1. Open Account\n");
@@ -133,6 +133,6 @@ int main() {
         printf("\n\t\t\tInvalid choice. Please try again.\n");
         }
     } while (choice != 6);
-    //The game was developed by Oliver Nikolajevic
+    //The game code developed by Oliver Nikolajevic
 return 0;
 }
