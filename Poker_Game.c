@@ -1,3 +1,22 @@
+/*
+The code is a simple poker game program in C, where the user can input the number of players, player's name, and money. 
+Then, the players can bet on 5 randomly selected numbers between 0 and 31. The program then selects 5 winning numbers 
+and compares them with the players' selected numbers. If there is a match, the player wins the bet amount multiplied 
+by a power of 2 based on the number of matches. The game continues until only one player is left with money or until the user chooses to quit.
+The program includes the following functions:
+    number_already_selected: checks if a number has already been selected by a player.
+    get_int_input: gets an integer input from the user and validates it to ensure it's within a certain range.
+    get_bets: prompts the players to enter their bets and selected numbers.
+    select_numbers: selects 5 random winning numbers.
+    count_matches: counts the number of matches between a player's selected numbers and the winning numbers.
+    pay_out: calculates the winnings for each player and adds it to their money if they win.
+    get_player_info: prompts the user to enter the name and money of a player.
+In the main function, the program first prompts the user to enter the number of players and the name and money of each player.
+Then, it enters a loop that runs until only one player is left with money or the user chooses to quit. In each iteration of
+the loop, it prompts the players to enter their bets, selects the winning numbers, and calculates the winnings for each player.
+It also checks if any players have run out of money and updates the number of remaining players. Finally, it asks the user 
+if they want to continue playing or quit. If there is only one player remaining or the user chooses to quit, the program terminates.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
