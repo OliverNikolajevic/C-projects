@@ -85,7 +85,7 @@ int guessLetter(char *word, int len, int *guessedLetters, char letter) {
 
 int main() {
 	   system("color 2");
-    printf("\t\t\t\tThe game was developed by Oliver Nikolajevic\n");
+    printf("\t\t\t\tThe code was developed by Oliver Nikolajevic\n");
     char filename[] = "words.txt";
     char word[MAX_WORD_LEN];
     int len, guessedLetters[MAX_WORD_LEN] = {0}, tries = 0;
@@ -132,7 +132,7 @@ int main() {
             return 0;
         }
     }
-//The game was developed by Oliver Nikolajevic
+//The code was developed by Oliver Nikolajevic
 }}
 
 /*
