@@ -1,3 +1,22 @@
+/*
+This is a C program, a simple implementation of a phonebook management system in using a struct to store records of 
+people's names, father's names, phone numbers, and emails. The program provides a menu of options for the user to add, 
+modify, delete, or list records. The program uses dynamic memory allocation to add new records and reallocates memory whenever a new record is added.
+The addRecord function takes a pointer to the array of Person structs and an integer pointer to the number of records n. 
+It then prompts the user to enter a new record and stores the record in the n-th index of the array.
+The modifyRecord function takes a pointer to the array of Person structs and the number of records n. It prompts 
+the user to enter the name of the record to be modified and then searches for the record in the array. If the record is found, it prompts the user to enter new information for each field of the record.
+The deleteRecord function takes a pointer to the array of Person structs and an integer pointer to the number of records n. 
+It prompts the user to enter the name of the record to be deleted and then searches for the record in the array. 
+If the record is found, it shifts all subsequent records one position to the left and decrements the value of n.
+The listRecords function takes a pointer to the array of Person structs and the number of records n. It prints a 
+formatted table of all the records in the array.
+The main function initializes a pointer p to NULL and n to 0. It then displays a menu of options and prompts 
+the user to select an option. Depending on the user's choice, the program calls one of the four functions to 
+add, modify, delete, or list records. The program runs in a loop until the user chooses to exit the program, 
+at which point the memory allocated for the array is freed using free(p).
+
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
