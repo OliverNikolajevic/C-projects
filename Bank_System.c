@@ -1,3 +1,16 @@
+/*
+This is a banking management system implemented in C programming language. Program uses a struct to represent a 
+bank account, and another struct to represent a bank that can hold multiple bank accounts. The program provides several 
+operations like opening a new account, displaying all accounts, depositing and withdrawing money from an account, and closing an account.
+The main function starts by initializing a new empty bank struct and displaying a menu of available operations. 
+The user can then select an operation by entering a number, and the program calls the corresponding function to perform that operation.
+The openAccount function prompts the user to enter details for a new bank account, including the name of the account holder,
+the account number, and the opening balance. It then adds the new account to the bank's list of customers.
+The displayAccounts function simply prints out a table of all the bank accounts stored in the bank struct.
+The deposit and withdraw functions take an account number and an amount as input, and add or subtract that amount from the corresponding account's balance.
+The closeAccount function removes a bank account from the bank struct when given an account number.
+The program continues to display the menu of options and prompt the user for input until the user chooses to exit the program.
+*/
 #include <stdio.h>
 #include <string.h>
 
