@@ -1,3 +1,16 @@
+/*
+This is a program in  C that allows the user to input the names of football teams and record their match results. 
+The program uses a struct called "Team" to store the team's name, wins, losses, and draws. The program allows the 
+user to input the home team index, away team index, home team score, and away team score. Based on the scores, 
+the program updates the number of wins, losses, and draws for the home and away teams.
+The program has three functions:
+    updateResults: This function updates the number of wins, losses, and draws for the home and away teams based on the scores inputted by the user.
+    displayResults: This function displays the results of all the teams entered by the user.
+    exportResults: This function exports the results to a CSV file named "Football_results.csv".
+The program uses a while loop to allow the user to input as many teams and match results as they want. 
+The program also includes a maximum number of teams that can be entered, which is set to 20.
+At the end of the program, the results are displayed on the console and exported to a CSV file.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
