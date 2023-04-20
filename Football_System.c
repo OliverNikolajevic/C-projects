@@ -48,7 +48,7 @@ int main() {
     int home, away, homeScore, awayScore;
     char teamName[MAX_NAME_LENGTH];
         system("color 2");
-    printf("\t\t\t\t\t\t\t\t\tThe game was developed by Oliver Nikolajevic");
+    printf("\t\t\t\t\t\t\t\t\tThe code was developed by Oliver Nikolajevic");
     while (1) {
         printf("\n\t\tEnter home team name (or 'q' to quit): ");
         fgets(teamName, MAX_NAME_LENGTH, stdin);
@@ -83,6 +83,6 @@ int main() {
     }
     displayResults(teams, n);
     exportResults(teams, n);
-    //The game was developed by Oliver Nikolajevic
+    //The code was developed by Oliver Nikolajevic
     return 0;
 }
