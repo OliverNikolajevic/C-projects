@@ -1,3 +1,24 @@
+/*
+This is a  program in C for a Hangman game. The program reads a list of words from a file, randomly 
+selects one of the words, and asks the user to guess the letters of the word. The user has a limited 
+number of tries to guess the word before losing the game.
+Here is a brief overview of the different functions in the program:
+    printHangman(int tries): Prints a stick figure representation of the Hangman, 
+    with the number of parts of the body displayed based on the number of tries left.
+    printWord(char *word, int len, int *guessedLetters): Prints the current state of the word being guessed, 
+    with underscores for unguessed letters and the actual letters for guessed letters.
+    chooseWord(char *filename, char *word): Reads the list of words from the specified file, selects a 
+    random word from the list, and returns it in the word variable.
+    guessLetter(char *word, int len, int *guessedLetters, char letter): Checks if the letter guessed by the 
+    user is present in the word being guessed, and updates the guessedLetters array to reflect this. 
+    Returns 1 if the letter is present, and 0 otherwise.
+In main(), the program starts by reading a list of words from a file, selecting a random word, and displaying 
+the length of the word to the user. It then enters a loop where it prompts the user to enter a letter, checks 
+if the letter is valid, and checks if the letter is present in the word being guessed. If the letter is present, 
+it updates the display to show the guessed letter, and checks if the user has guessed all the letters in the word. 
+If the user has guessed all the letters, the program prints a win message and exits. If the letter is not present, 
+it increments the number of tries left and displays the Hangman. If the user runs out of tries, the program prints a lose message and exits.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
