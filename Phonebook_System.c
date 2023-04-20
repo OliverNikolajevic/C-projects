@@ -70,7 +70,7 @@ int main() {
     int n = 0;
     int choice;
 system("color 2");
- printf("\t\t\t\t\t\t\t\t\tThe game was developed by Oliver Nikolajevic");
+ printf("\t\t\t\t\t\t\t\t\tThe code was developed by Oliver Nikolajevic");
     do {
         printf("\n\t\t\tPhonebook Management System\n");
         printf("\n\t\t\t1. Add new record\n");
@@ -105,6 +105,6 @@ system("color 2");
     } while(choice != 5);
 
     free(p);
-//The game was developed by Oliver Nikolajevic
+//The code was developed by Oliver Nikolajevic
     return 0;
 }
