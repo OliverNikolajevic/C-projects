@@ -100,7 +100,7 @@ void get_player_info(PokerPlayer *player) {
 int main(void) {
     srand(time(NULL));
     system("color 2");
-    printf("\t\t\t\t\t\t\t\t\tThe game was developed by Oliver Nikolajevic");
+    printf("\t\t\t\t\t\t\t\t\tThe code was developed by Oliver Nikolajevic");
     printf("\n\t\tWelcome to the POKER GAME!\n\n");
     printf("\n\t\tHow many players? (1-%d): ", NUM_PLAYERS_MAX);
  
@@ -149,7 +149,7 @@ int main(void) {
             }
         }
     }
-//The game was developed by Oliver Nikolajevic
+//The code was developed by Oliver Nikolajevic
     free(players);
     return 0;
 }
