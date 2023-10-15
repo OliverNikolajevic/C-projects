@@ -1,0 +1,6 @@
+This is page 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan, est et dignissim, arcu erat bibendum metus, sed vestibulum odio metus ut elit. Vivamus id nisl vel libero volutpat tincidunt.
+
+This is page 2, with more content that continues from the previous page.
+
+And this is the final page. Thanks for using 'makepages'!
+
